@@ -11,5 +11,16 @@ fetch('https://api.imgflip.com/caption_image', {
   body: params
 })
 .then(res => res.json())
-.then(data => console.log(data));
+.then(data => ()=>{return data});
 }
+
+function consoleLogAllMemes(){
+  fetch('https://api.imgflip.com/get_memes', {
+})
+.then(res => res.json())
+.then(data =>()=>{return data}) 
+
+
+}
+
+

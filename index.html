@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meme Generator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="box-container1">
-        <div class="box box-top box1-top-container">Box1-Top</div>
-        <div class="box box-top box2-top-container">Box2-Top</div>
+      <div class="box box-top box1-top-container">Box1-Top</div>
+      <div class="box box-top box2-top-container">Box2-Top</div>
     </div>
-    <div class="box">Box2</div>
+    <div class="box box-medium">
+      Box2
+      <div id="memetitle">Meme title</div>
+      <ul class="memeNav">
+        <li><button id="previous">Prev</button></li>
+        <li><button id="random">Random</button></li>
+        <li><button id="next">Next</button></li>
+      </ul>
+      <div class="meme">
+        <img src="./WiseWordsFromYoda.jpg" alt="meme content" />
+      </div>
+    </div>
     <div class="box">Box3</div>
-</body>
+    <script src="./eventListeners.js"></script>
+    <script src="./api.js"></script>
+  </body>
 </html>
