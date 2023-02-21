@@ -1,9 +1,10 @@
+function consoleLogFulfilledMemeRequest(template_id, text0, text1){
 const params = new URLSearchParams();
-params.append('template_id', '14371066');
+params.append('template_id', template_id);
 params.append('username', '');
 params.append('password', '');
-params.append('text0', 'Hrrmmm. Wise if you want to become...');
-params.append('text1', 'ulearn to use the meme api you must.');
+params.append('text0', text0);
+params.append('text1', text1);
 
 fetch('https://api.imgflip.com/caption_image', {
   method: 'POST',
@@ -11,3 +12,4 @@ fetch('https://api.imgflip.com/caption_image', {
 })
 .then(res => res.json())
 .then(data => console.log(data));
+}
