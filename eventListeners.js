@@ -1,15 +1,15 @@
 //Add event listeners
-
-document.getElementById('previous').addEventListener('click',function(){
-let buttonPrevious=document.getElementById('previous')
-buttonPrevious.innerHTML='hola'
-
-});
-/*
-document.getElementById('random').addEventListener(click,function{
-    
+document.addEventListener("DOMContentLoaded", () => {
+  loadFirstMeme();
 });
 
-document.getElementById('next').addEventListener(click,function{
-    
-});*/
+document.getElementById("previous").addEventListener("click", function () {
+  let buttonPrevious = document.getElementById("previous");
+  buttonPrevious.innerHTML = "hola";
+});
+
+document.addEventListener("keyup", (event) => {
+  if (event.key === "ArrowDown") {
+    changeImageBy1(memeId, memesArray);
+  }
+});
