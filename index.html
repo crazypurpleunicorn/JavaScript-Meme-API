@@ -10,7 +10,15 @@
   <body>
     <div class="box-container1">
       <div class="box box-top" id="box1-top-container">Box1-Top</div>
-      <div class="box box-top" id="box2-top-container">Box2-Top</div>
+      <div class="box box-top" id="box2-top-container">
+        Box2-Top
+        <input type="text" id="text0" name="name" required
+       minlength="4" maxlength="8" size="25">
+       <input type="text" id="text1" name="name" required
+       minlength="4" maxlength="8" size="25">
+       <input type="button" id="submit-btn" value="Submit">
+
+      </div>
     </div>
     <div class="box box-medium">
       Box2
@@ -21,11 +29,12 @@
         <li><button id="next">Next</button></li>
       </ul>
       <div class="meme">
-        <img src="./WiseWordsFromYoda.jpg" alt="meme content" />
+        <img src="" id="image" alt="memeimage">
+        <!--<img src="./WiseWordsFromYoda.jpg" alt="meme content" /> -->
       </div>
     </div>
     <div class="box">Box3</div>
-    <img src="" id="image" alt="memeimage">
+    <img src="" id="imageresult" alt="">
     <script src="./api.js"></script>
     <script src="./eventListeners.js"></script>
   </body>
